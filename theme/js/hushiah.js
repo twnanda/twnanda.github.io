@@ -15771,7 +15771,9 @@ function createInputCheck() {
 		show.appendChild(span);
 		show.appendChild(document.createElement("br"));
 	}
-	show.appendChild(document.createElement("br"));
+	if (show != null) {
+		show.appendChild(document.createElement("br"));
+	}
 }
 
 function createCRTableHeading(crTable) {
